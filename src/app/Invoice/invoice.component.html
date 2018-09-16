@@ -13,7 +13,7 @@
         </div>
         <div class="col-xs-6 logo-container">
         <input type="file" id="imgInp" />
-        <img id="company_logo" [src]="logoUrl" alt="PC Logo Image" [style.width.px]='ImageWidth' />
+        <img id="company_logo" [src]="logoUrl" alt="PC Logo Image" />
         </div>
     </div>
     <div class="row infos">
@@ -47,7 +47,7 @@
             <input [(ngModel)]='item.description' placeholder="Description" />
         </div>
         <div class="col-xs-2 input-container">
-            <input [(ngModel)]='item.quantity' value="1" size="4" ng-required ng-validate="integer" placeholder="Quantity" />
+            <input [(ngModel)]='item.quantity' value="1" size="4" required ng-validate="integer" placeholder="Quantity" />
         </div>
         <div class="col-xs-2 input-container">
             <input [(ngModel)]='item.cost' value="0.00" ng-required ng-validate="number" size="6" placeholder="Cost" />
